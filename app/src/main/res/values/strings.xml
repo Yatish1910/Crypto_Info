@@ -2,4 +2,9 @@
     <string name="app_name">Retrofit Demo</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_1_w">1 W</string>
+    <string name="_1_d">1 D</string>
+    <string name="_1_m">1 M</string>
+    <string name="_1_y">1 Y</string>
+    <string name="all">ALL</string>
 </resources>

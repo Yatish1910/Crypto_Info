@@ -1,9 +1,9 @@
 package com.example.retrofitdemo.roomdatabase.doa
 
-import androidx.lifecycle.LiveData
 import androidx.room.*
 import androidx.room.Dao
 import com.example.retrofitdemo.roomdatabase.roomdata.FavouriteData
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface Dao {
@@ -13,6 +13,6 @@ interface Dao {
     @Delete
     suspend fun deleteFavourite(favouriteData: FavouriteData)
 
-    @Query("SELECT * FROM favourite_table ORDER BY id ASC")
-    fun readAllData() :LiveData<ArrayList<FavouriteData>>
+    @Query("SELECT * FROM favourite_table ")
+    fun readAllData() : Flow<List<FavouriteData>>
 }
